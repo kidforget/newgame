@@ -51,8 +51,42 @@ public class Unit : NaviUnit
 
 		weapon.Play(target);
         int del = Random.Range(30, 40);
+        target.UnderAttack(del);
 		return true;
 	}
+    private int ddd;
+
+    // 延迟执行，和攻击弹道同步
+    IEnumerator MyMethod()
+    {
+        Debug.Log("Before Waiting 2 seconds");
+        yield return new WaitForSeconds(1);
+        Debug.Log("After Waiting 2 Seconds");
+        HP -= ddd;
+        if (HP <= 0)
+        {
+            HP = 0;
+        }
+    }
+    // 受到攻击
+    public void UnderAttack(int del)
+    {
+        ddd = del;
+        StartCoroutine("MyMethod");
+        //MyMethod();
+        //for (int i = 1; i <= 200000000; i++) tot++;
+        if (HP <= 0)
+        {
+            HP = 0;
+            //this.node.units.Remove(this);
+            //transform.position = new Vector3(0, 0, 0);
+            //float x = transform.position.x;
+            //float y = transform.position.y;
+            //float z = transform.position.z;
+            //transform.position.Set(x, y+100, z);
+        }
+    }
+
 	private void OnAttackDone(NaviUnit unit, int eventCode)
 	{
 		if (onUnitEvent != null) onUnitEvent(this, 2);
