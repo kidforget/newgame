@@ -137,7 +137,7 @@ public class GameController : TMNController
                 }
             }
 
-			//if (allowInput) this.HandleInput(); //≤‚ ‘
+			if (allowInput) this.HandleInput(); //≤‚ ‘
 
 		}
 

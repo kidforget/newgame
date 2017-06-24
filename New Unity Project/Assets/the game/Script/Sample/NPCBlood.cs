@@ -60,7 +60,7 @@ public class NPCBlood : MonoBehaviour
         HP = GetComponent<Unit>().HP;
         
         //保持NPC一直面朝主角		
-        transform.LookAt(hero.transform);
+        //transform.LookAt(hero.transform);
     }
     void OnGUI()
     {
