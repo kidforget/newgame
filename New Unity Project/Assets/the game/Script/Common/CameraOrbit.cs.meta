@@ -1,7 +1,14 @@
 fileFormatVersion: 2
-guid: 5580802b5473e4f4fb074d480d4b50d6
-timeCreated: 1498281030
-licenseType: Free
+guid: 470daa96af1b0b3468ca74ed83c911a2
+labels:
+- movement
+- navnode
+- navmesh
+- tilebased
+- tiles
+- pathfinding
+- path
+- navigation
 MonoImporter:
   serializedVersion: 2
   defaultReferences: []

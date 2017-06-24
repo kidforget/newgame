@@ -1,5 +1,14 @@
 fileFormatVersion: 2
-guid: b798e18b5848c2d4894f742a65b9b304
+guid: 2075ecd863ff02c44a31f08c15c883e8
+labels:
+- movement
+- navnode
+- navmesh
+- tilebased
+- tiles
+- pathfinding
+- path
+- navigation
 MonoImporter:
   serializedVersion: 2
   defaultReferences: []

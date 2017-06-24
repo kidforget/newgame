@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartUI : MonoBehaviour {
+public class startUI : MonoBehaviour {
     //private GameController game;
     private Rect winRect = new Rect(10f, 10f, 300f, 100f);
 
